@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Conductores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Contenido de la página de conductores -->
+  <div class="driver-page-container">
+    <h2>Ofrece tus servicios como conductor</h2>
+    <p>Gana dinero extra compartiendo tus viajes con otros estudiantes de Duoc UC.</p>
+
+    <!-- Información sobre cómo ser conductor -->
+    <div class="driver-info">
+      <h3>¿Cómo ser conductor?</h3>
+      <p>Para convertirte en conductor en TeLlevoApp, sigue estos pasos:</p>
+      <ol>
+        <li>Regístrate como conductor en la aplicación.</li>
+        <li>Completa tu perfil y agrega información sobre tu vehículo.</li>
+        <li>Publica tus viajes disponibles y espera a que los estudiantes se unan a tus viajes.</li>
+        <li>Gana dinero compartiendo tus viajes y ayudando a otros estudiantes.</li>
+      </ol>
+    </div>
+
+    <!-- Botón para registrarse como conductor -->
+    <ion-button expand="full" (click)="registrarComoConductor()" class="register-button">
+      Registrarse como Conductor
+    </ion-button>
+  </div>
+</ion-content>

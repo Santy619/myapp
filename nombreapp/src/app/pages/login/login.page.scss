@@ -1,0 +1,36 @@
+/* login.page.scss */
+
+ion-content {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  ion-button {
+    margin-top: 20px;
+    background-color: #583e75; // Color de fondo del botón
+    color: white; // Color del texto del botón
+  }
+
+.image-container{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.center-container {
+  // ... Tus estilos actuales ...
+  
+  a {
+    display: block;
+    margin-top: 15px; // Ajusta el valor según sea necesario
+    text-align: center;
+    color: #007bff; // O el color que desees
+    text-decoration: underline;
+  }
+}
