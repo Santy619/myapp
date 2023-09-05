@@ -12,10 +12,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="student-page">
+  <ion-title>
+    Bienvenidos a la Página de Estudiantes
+  </ion-title>
+  <p>Si están aquí para alquilar un auto con Tellevo, ¡estamos emocionados de tenerlos a bordo!</p>
   <ion-grid>
+    
     <ion-row class="icon-row">
       <ion-col size="4">
-        <ion-img src="../assets/img/perfil.png" (click)="irPerfil()"style="cursor: pointer;"></ion-img>
+        <ion-img src="../assets/img/perfil.jpg" (click)="irPerfil()"style="cursor: pointer;"></ion-img>
         <p>Perfil</p>
       </ion-col>
       <ion-col size="4">
@@ -25,7 +30,7 @@
       <ion-col size="4">
         <ion-img src="../assets/img/chat.png" (click)="irAChat()"style="cursor: pointer;"></ion-img>
         <p>Chat</p>
-        <ion-button expand="full" (click)="irAChat()" class="option-button"></ion-button>
+        
       </ion-col>
     </ion-row>
   </ion-grid>
