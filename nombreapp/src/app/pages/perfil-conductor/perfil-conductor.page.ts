@@ -24,6 +24,7 @@ export class PerfilConductorPage implements OnInit {
 
   irAPlanearViaje() {
     // Lógica para redirigir a la página de planear viaje
+    this.router.navigate(['/mapa']); // Navega a la página de chat
   }
   
   irAChat() {

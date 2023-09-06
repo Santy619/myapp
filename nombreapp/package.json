@@ -32,8 +32,8 @@
     "@angular-eslint/builder": "^16.0.0",
     "@angular-eslint/eslint-plugin": "^16.0.0",
     "@angular-eslint/eslint-plugin-template": "^16.0.0",
-    "@angular-eslint/template-parser": "^16.0.0",
     "@angular-eslint/schematics": "^16.0.0",
+    "@angular-eslint/template-parser": "^16.0.0",
     "@angular/cli": "^16.0.0",
     "@angular/compiler": "^16.0.0",
     "@angular/compiler-cli": "^16.0.0",
@@ -43,6 +43,7 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
+    "cordova-plugin-googlemaps": "^2.7.1",
     "eslint": "^7.26.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -57,5 +58,13 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "ts-node": "^8.3.0",
     "typescript": "~5.0.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-googlemaps": {
+        "API_KEY_FOR_ANDROID": "AIzaSyD9JpgX3tZT-hk_qGG31I7W0AEFGBUm0h4",
+        "API_KEY_FOR_IOS": "AIzaSyD9JpgX3tZT-hk_qGG31I7W0AEFGBUm0h4"
+      }
+    }
   }
 }
