@@ -14,25 +14,47 @@
 
 <ion-content>
   <!-- Contenido de la página de conductores -->
+  
   <div class="driver-page-container">
+    <!-- Logo de Duoc UC -->
+    <ion-img src="../assets/img/duocuctrans.png" alt="Logo de Duoc UC" class="duoc-logo"></ion-img>
     <h2>Ofrece tus servicios como conductor</h2>
     <p>Gana dinero extra compartiendo tus viajes con otros estudiantes de Duoc UC.</p>
 
-    <!-- Información sobre cómo ser conductor -->
-    <div class="driver-info">
-      <h3>¿Cómo ser conductor?</h3>
-      <p>Para convertirte en conductor en TeLlevoApp, sigue estos pasos:</p>
-      <ol>
-        <li>Regístrate como conductor en la aplicación.</li>
-        <li>Completa tu perfil y agrega información sobre tu vehículo.</li>
-        <li>Publica tus viajes disponibles y espera a que los estudiantes se unan a tus viajes.</li>
-        <li>Gana dinero compartiendo tus viajes y ayudando a otros estudiantes.</li>
-      </ol>
-    </div>
-
-    <!-- Botón para registrarse como conductor -->
-    <ion-button expand="full" (click)="registrarComoConductor()" class="register-button">
-      Registrarse como Conductor
-    </ion-button>
+    <form (ngSubmit)="registrarComoConductor()">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [(ngModel)]="nombre" name="nombre" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Vehiculo</ion-label>
+        <ion-input [(ngModel)]="vehiculo" name="vehiculo" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Edad</ion-label>
+        <ion-input [(ngModel)]="edad" name="edad" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Patente</ion-label>
+        <ion-input [(ngModel)]="patente" name="patente" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Licencia (Foto)</ion-label>
+        <ion-input
+          [(ngModel)]="fotoLicencia"
+          name="fotoLicencia"
+          type="file"
+          accept="image/*"
+          (change)="onFileChange($event)"
+        ></ion-input>
+      </ion-item>
+      
+      <!-- Vista previa de la imagen -->
+      <img [src]="fotoLicencia ? fotoLicenciaPreview : ''" alt="Vista previa de la licencia" *ngIf="fotoLicencia">
+      
+      <ion-button expand="full" type="submit" class="register-button">
+        Registrarse como Conductor
+      </ion-button>
+    </form>
   </div>
 </ion-content>

@@ -34,3 +34,29 @@ ion-content {
     text-decoration: underline;
   }
 }
+ion-content {
+  background-color: #000;
+  color: #fff; /* Texto blanco */
+  text-align: center; /* Texto centrado */
+  padding: 20px; /* Espacio interior */
+}
+
+/* Estilos para los títulos y subtítulos */
+ion-title {
+  font-size: 24px; /* Tamaño de fuente grande */
+  color: #007BFF; /* Texto azul */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para los párrafos */
+p {
+  font-size: 16px; /* Tamaño de fuente mediano */
+}
+
+/* Estilos para los botones */
+ion-button {
+  background-color: #007BFF; /* Fondo azul para el botón */
+  color: #fff; /* Texto blanco */
+  font-weight: bold; /* Texto en negrita */
+  margin-top: 20px; /* Margen superior */
+}
