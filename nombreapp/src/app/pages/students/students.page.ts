@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
+
+
+
 @Component({
   selector: 'app-students',
   templateUrl: './students.page.html',
@@ -20,6 +24,7 @@ irPerfil() {
 
 irViajes() {
   // Agrega aquí la lógica para navegar a la página de viajes
+  this.router.navigate(['/viajes']);
 }
   ngOnInit() {
   }
