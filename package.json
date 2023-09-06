@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ionic-native/google-maps": "^5.5.0"
+  }
+}
