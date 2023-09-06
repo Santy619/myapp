@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { RegistroConductorPage } from './pages/registro-conductor/registro-conductor.page';
+import { PerfilConductorPage } from './pages/perfil-conductor/perfil-conductor.page';
 
 const routes: Routes = [
   {
@@ -40,6 +42,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/students/students.module').then(m => m.StudentsPageModule)
   },
   {
+    path: 'drivers',
+    loadChildren: () => import('./pages/drivers/drivers.module').then(m => m.DriversPageModule)
+  },
+  {
     path: 'bandeja-chat',
     loadChildren: () => import('./pages/bandeja-chat/bandeja-chat.module').then( m => m.BandejaChatPageModule)
   },
@@ -47,6 +53,25 @@ const routes: Routes = [
     path: 'chat-individual/:contacto',
     loadChildren: () => import('./pages/chat-individual/chat-individual.module').then( m => m.ChatIndividualPageModule)
   },
+  {
+    path: 'perfil-conductor',
+    loadChildren: () => import('./pages/perfil-conductor/perfil-conductor.module').then( m => m.PerfilConductorPageModule)
+  },
+  {
+    path: 'registro-conductor',
+    loadChildren: () => import('./pages/registro-conductor/registro-conductor.module').then( m => m.RegistroConductorPageModule)
+  },
+  { path: 'registro-conductor', component: RegistroConductorPage },
+  { path: 'perfil-conductor', component: PerfilConductorPage },
+  {
+    path: 'viajes',
+    loadChildren: () => import('./pages/viajes/viajes.module').then( m => m.ViajesPageModule)
+  },
+  {
+    path: 'mapa',
+    loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
+  },
+ 
   
 ];
 
